@@ -1,18 +1,15 @@
 # for a description of available keys, see https://github.com/typst/packages/?tab=readme-ov-file#package-format
 
 [package]
-name = ""
+name = "navigation-logger"
 version = "0.1.0"
 entrypoint = "src/lib.typ"
-authors = []
-license = "Unlicense"
-description = ""
-homepage = ""
-repository = ""
-keywords = []
-categories = []
-disciplines = []
-# compiler = ""
+authors = ["TristanDuncombe"]
+license = "MIT"
+description = "A Navigation Log, developed to replace multiple pages of notes and provide a succinct template to manage all the information needed as a Cross Country Pilot!"
+repository = "https://github.com/tristanduncombe/navigation-logger"
+keywords = ["navigation", "aviation", "flying", "log"]
+categories = ["utility"]
 exclude = [
   ".github",
   "docs",
@@ -24,10 +21,7 @@ exclude = [
   "thumbnail-light.svg",
 ]
 
-# [template]
-# path = "template"
-# entrypoint = "main.typ"
-# thumbnail = "thumbnail.png"
-
-# [tool.mytool]
-# foo = "bar"
+[template]
+path = "src"
+entrypoint = "lib.typ"
+thumbnail = "thumbnail.png"
