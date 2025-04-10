@@ -36,7 +36,7 @@ A simple, bare-bones navigation sheet will look like this.
 
 This template is very flexible and can be used in a number of ways. See `/examples` for more examples.
 
-````typ
+```typ
 #import "@preview/navigation-logger:0.1.0": *
 
 #show: navigation-logger.with(

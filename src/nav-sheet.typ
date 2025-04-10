@@ -95,7 +95,7 @@
 
 #let fuel_com_log = [
   #box(height:25%)[
-  #text(6pt)[
+  #text(5pt)[
   #columns(3)[
     Fuel Track
     #table(columns:(0.75fr, 1fr, 1fr),
@@ -104,7 +104,7 @@
         if y == 0 { rgb("#f0f0f0") }
         else if calc.even(y) { rgb("#f0f0f0") }
         else { white },)[At][Left (min)][Right (min)][(#h(0.5fr))][][][(#h(0.5fr))][][][(#h(0.5fr))][][][(#h(0.5fr))][][][(#h(0.5fr))][][][(#h(0.5fr))][][][(#h(0.5fr))][][][(#h(0.5fr))][][]
-    Nav/Com Freq
+    Frequencies
     #table(columns:(0.75fr, 1fr, 1fr), stroke: 0.5pt, fill: (x, y) =>
         if y == 0 { rgb("#f0f0f0") }
         else if calc.even(y) { rgb("#f0f0f0") })[At][Com 1][Com 2][#v(4pt)][][][#v(4pt)][][][#v(4pt)][][][#v(4pt)][][][#v(4pt)][][][#v(4pt)][][][#v(4pt)][][][#v(4pt)][][]
@@ -139,7 +139,7 @@
         #table(columns: (1fr, 1fr), stroke: (none))[Aerodrome][#text(size: 6pt)[#table(columns: (1fr, 1fr, 1fr), inset: 0pt,
           align: horizon,
           stroke: (none),
-          [Elevation],
+          [Elev],
           [CTAF],
           [AWIS]
         )]][#standard_box()][
@@ -220,7 +220,7 @@
 }
 
 #let navigation-logger(aircraft: "both", callsign: "", type: "", departure: "",  variant: "1", lines: bool, waypoint: false, waypoints: "", fixes: [], doc) = [
-  #set text(font: "Roboto", size: 10pt)
+  #set text(font: "DejaVu Sans", size: 9pt)
 
   #set page(
     paper: "a5",
