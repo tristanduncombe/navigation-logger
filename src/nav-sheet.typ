@@ -220,7 +220,7 @@
 }
 
 #let navigation-logger(aircraft: "both", callsign: "", type: "", departure: "",  variant: "1", lines: bool, waypoint: false, waypoints: "", fixes: [], doc) = [
-  #set text(font: "DejaVu Sans", size: 9pt)
+  #set text(font: "DejaVu Sans Mono", size: 9pt)
 
   #set page(
     paper: "a5",
